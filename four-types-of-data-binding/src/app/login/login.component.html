@@ -1,0 +1,16 @@
+<p>login works!</p>
+
+<div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" [(ngModel)]="username" />
+  
+    <label for="password">Password:</label>
+    <input type="password" id="password" [(ngModel)]="pwd" />
+  
+    <p>Entered Username: {{ username }}</p>
+    <p>Entered Password: {{ pwd }}</p>
+  
+    <button [disabled]="username === '' || pwd === ''" (click)="onLogin()">Login</button>
+  </div>
+  
+  
